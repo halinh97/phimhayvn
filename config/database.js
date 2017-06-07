@@ -1,6 +1,6 @@
 // config/database.js
 module.exports = {
 
-    'url' :  "postgres://khjazedjdbfznh:aedf899294ac4f8b270e49dd41bb4a3cc3f66e28c7da8c581e5471c941a77211@ec2-184-73-236-170.compute-1.amazonaws.com:5432/de3acf6i8u7q72" 
+    'url' :  "postgres://xbmngfbbfqjaku:39fda3c9073f9f06553ca6007e3243674f6a2190a98090611901a12537b429aa@ec2-23-21-220-48.compute-1.amazonaws.com:5432/dd0n5iffp5jof5" 
 
 };

@@ -29,10 +29,10 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 // routes ======================================================================
 require('./app/routes.js')(app, passport);
 var config = {
-    user: 'khjazedjdbfznh', //env var: PGUSER
-    database: 'de3acf6i8u7q72', //env var: PGDATABASE
+    user: 'xbmngfbbfqjaku', //env var: PGUSER
+    database: 'dd0n5iffp5jof5', //env var: PGDATABASE
     password: 'aedf899294ac4f8b270e49dd41bb4a3cc3f66e28c7da8c581e5471c941a77211', //env var: PGPASSWORD
-    host: 'ec2-184-73-236-170.compute-1.amazonaws.com', // Server hosting the postgres database
+    host: 'ec2-23-21-220-48.compute-1.amazonaws.com', // Server hosting the postgres database
     port: 5432, //env var: PGPORT
     max: 10, // max number of clients in the pool
     idleTimeoutMillis: 30000,

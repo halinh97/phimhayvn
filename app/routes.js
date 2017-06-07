@@ -2,14 +2,14 @@ module.exports = function(app, passport) {
 const pg = require('pg');
 // normal routes ===============================================================
 var config = {
-    user: 'khjazedjdbfznh', //env var: PGUSER
-    database: 'de3acf6i8u7q72', //env var: PGDATABASE
-    password: 'aedf899294ac4f8b270e49dd41bb4a3cc3f66e28c7da8c581e5471c941a77211', //env var: PGPASSWORD
-    host: 'ec2-184-73-236-170.compute-1.amazonaws.com', // Server hosting the postgres database
-    port: 5432, //env var: PGPORT
-    max: 10, // max number of clients in the pool
-    idleTimeoutMillis: 30000,
-		ssl:true // how long a client is allowed to remain idle before being closed
+  user: 'xbmngfbbfqjaku', //env var: PGUSER
+  database: 'dd0n5iffp5jof5', //env var: PGDATABASE
+  password: 'aedf899294ac4f8b270e49dd41bb4a3cc3f66e28c7da8c581e5471c941a77211', //env var: PGPASSWORD
+  host: 'ec2-23-21-220-48.compute-1.amazonaws.com', // Server hosting the postgres database
+  port: 5432, //env var: PGPORT
+  max: 10, // max number of clients in the pool
+  idleTimeoutMillis: 30000,
+  ssl:true // h long a client is allowed to remain idle before being closed
 };
 var pool = new pg.Pool(config);
 
