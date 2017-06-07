@@ -1,0 +1,62 @@
+.advertisement img{
+	height: 250px;
+	width: 1140px;
+	padding: 10px;
+}
+
+.InformationOfFilm{
+	color: #ffffff;
+	background-color: #001100;
+	height: 400px;
+}
+
+#poster{
+	padding: 10px;
+	padding-left: 20px;
+}
+.box{
+	border:1px solid #efefef;
+	width:300px;
+	height:375px;	
+}
+.box img{
+	margin:auto;
+	width:100%;
+	height: 100%;
+	border: #161616 solid;
+	border-bottom: #858585 solid;
+}
+
+#purport{
+	width: 350px;
+	height:375px;
+	padding: 5px;
+	background: #1C1C1C;
+}
+
+.comment{
+	padding: 10px;
+	background: #1C1C1C;
+}
+
+footer{
+	background:#000022;
+	padding:40px 0px 0px 0px;
+	color:#969593;
+}
+footer a{
+	color:#969593;
+}
+footer h5{
+	color:#fff;
+	font-size:16px;
+}
+footer .col-md-12{
+	background:#000;
+	color:#fff;
+	padding:20px 0px 30px 15px;
+}
+body
+{
+	background: #383838
+}

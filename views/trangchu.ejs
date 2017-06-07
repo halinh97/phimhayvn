@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xem Phim Hay</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/flexslider/flexslider.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon_dark.ico">
+
+    <!--
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> -->
+
+    <!-- Favicon and touch icons -->
+
+
+
+    <body>
+
+        <!-- Top menu -->
+        <nav class="navbar" role="navigation">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+                <a class="navbar-brand" href="/" style="margin-left: 10px;"> <img src="assets/img/logophim1.png" alt=""></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="top-navbar-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/" class="dropdown-toggle"><i class="fa fa-home"></i><br><strong>Trang Chủ</strong></a>
+                    </li>
+
+                    <li>
+                        <a href="portfolio.html"><i class="fa fa-video-camera" ></i><br><strong>Phim Mới</strong></a>
+                    </li>
+                    <li>
+                        <a href="services.html"><i class="fa fa-wifi "></i><br><strong>Phim Nổi Bật</strong></a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html"><i class="fa fa-trophy"></i><br><strong>Phim Rạp</strong></a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+                            <i class="fa fa-simplybuilt"></i><br><strong>Thể Loại</strong> <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href=""class="btn btn-default">Phim Hoạt Hình</a></li>
+                            <li><a href=""class="btn btn-default">Phim Mỹ </a></li>
+                            <li><a href=""class="btn btn-default">Phim Trung Quốc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        </br>
+                        </br>
+                        <input type="text" name="search" id="box" placeholder="   Search..">
+                    </li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+                              <i class="fa fa-users"></i><br><strong>Đăng Nhập</strong> <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu" role="menu">
+                              <li><a href="/login" class="btn btn-default"><span class="fa fa-user"></span><span> Đăng Nhập</span></a></li>
+                              <li><a href="/login_admin" class="btn btn-default"><span class="fa fa-qq"></span> <span>Admin</span></a></li>
+                          </ul>
+                      </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- Slider 2 -->
+        <div class="slider-2-container">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-8 col-sm-offset-2 slider-2-text wow fadeInUp">
+                        <h1>Chuc Cac Ban Xem Phim Vui Ve !!!.</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="services-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 services-title wow fadeIn">
+                        <h2>Phim Mới</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <% data.rows.forEach(function(item){ %>
+                        <div class="col-sm-3">
+                            <div class="phim">
+                                <div class="service wow fadeInDown ">
+                                    <img height="180" src="../upload/<%= item.imge %>" alt="" />
+                                    <h3 class="tieude"><%= item.tieude %></h3>
+                                    <a class="big-link-1" href="video/xemvideo/<%= item.id %>">Xem Phim</a>
+                                </div>
+                            </div>
+                        </div>
+                        <% });%>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest work -->
+        <div class="work-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 work-title wow fadeIn">
+                        <h2>Phim Nổi Bật</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <% data.rows.forEach(function(item){ %>
+                        <div class="col-md-3">
+                            <div class="phim">
+                                <div class="work wow fadeInUp">
+                                    <img src="../upload/<%= item.imge %>" alt="" />
+                                    <h3 class="tieude"><%= item.tieude %></h3>
+                                    <div class="work-bottom">
+                                        <a class="big-link-1" href="">Xem Phim</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% });%>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 testimonials-title wow fadeIn">
+                        <h2>Testimonials</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 testimonial-list">
+                        <div role="tabpanel">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                                    <div class="testimonial-image">
+                                        <img src="assets/img/testimonials/1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <p>
+                                            "Không biết đã bao nhiêu lần con người buông tay từ bỏ khi mà chỉ một chút nỗ lực, một chút kiên trì nữa thôi là anh ta sẽ đạt được thành công."</br>
+                                            How many a man has thrown up his hands at a time when a little more effort, a little more patience would have achieved success. "<br>
+                                            <strong><a href="#">Elbert Hubbard</a></strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab2">
+                                    <div class="testimonial-image">
+                                        <img src="assets/img/testimonials/2.jpg" alt="" data-at2x="assets/img/testimonials/2.jpg">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <p>
+                                            Như lạc đà không hề uể oải dù vất vả, nóng bức, đói, khát trên sa mạc đầy cát; sức chịu đựng ngoan cường sẽ giúp con người vượt qua mọi hiểm họa. As a camel beareth labor, and heat, and hunger, and thirst, through deserts of sand, and fainteth not; so
+                                            the fortitude of a man shall sustain him through all perils. Akhenaton
+
+
+                                            <a href="#">Minim Veniam, nostrud.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab3">
+                                    <div class="testimonial-image">
+                                        <img src="assets/img/testimonials/3.jpg" alt="" data-at2x="assets/img/testimonials/3.jpg">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <p>Đừng che dấu tình yêu và sự dịu dàng của mình cho đến khi bạn lìa đời. Hãy làm cuộc đời bạn tràn đầy sự ngọt ngào. Hãy nói những lời thân thương khi bạn còn nghe được và tim bạn còn rung động.
+
+                                            <a href="#">k</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab4">
+                                    <div class="testimonial-image">
+                                        <img src="assets/img/testimonials/1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <p>Hãy tập trung nỗ lực cao nhất vào những cơ hội tốt nhất chứ không phải những rắc rối tồi tệ nhất. Put your best effort towards your best opportunities, not your biggest problems.
+
+
+                                            <strong><a href="#">Khuyết danh</a></strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab"></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 footer-box wow fadeInUp">
+                        <h4>Góc Nhìn</h4>
+                        <div class="footer-box-text">
+                            <p>
+                                Hôm nay đầy rẫy những khó khăn, và ngày mai cũng không có điều gì dễ dàng. Nhưng sau ngày mai, mọi thứ sẽ trở nên tốt đẹp.</br>
+                                <strong><a href="about.html">Khuyết Danh</a></strong>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 footer-box wow fadeInDown">
+                        <h4>Phản Hồi</h4>
+                        <div class="footer-box-text footer-box-text-subscribe">
+                            <p>Hãy gửi cho chúng tôi những cảm nhận về trải nghiệm của bạn</p>
+                            <form role="form" action="" method="post">
+                                <div class="form-group">
+                                    <label class="sr-only" for="subscribe-email">Email address</label>
+                                    <input type="text" name="email" placeholder="Email..." class="subscribe-email" id="subscribe-email">
+                                </div>
+                                <button type="submit" class="btn">Subscribe</button>
+                            </form>
+                            <p class="success-message"></p>
+                            <p class="error-message"></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 footer-box wow fadeInUp">
+                        <h4>Ảnh ...</h4>
+                        <div class="footer-box-text flickr-feed"></div>
+                    </div>
+                    <div class="col-sm-3 footer-box wow fadeInDown">
+                        <h4>Liên Hệ</h4>
+                        <div class="footer-box-text footer-box-text-contact">
+                            <p><i class="fa fa-map-marker"></i> Address: phimhayvn.com Hà Nội</p>
+                            <p><i class="fa fa-phone"></i> Phone: 01678238831</p>
+                            <p><i class="fa fa-user"></i> Skype: HaLinh</p>
+                            <p><i class="fa fa-envelope"></i> Email: <a href="">Nhatlinhrma@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <div class="footer-border"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-7 footer-copyright wow fadeIn">
+                        <p>Copyright 2017 Hà Linh.
+                            <a href="facebook.com"></a>.</p>
+                    </div>
+                    <div class="col-sm-5 footer-social wow fadeIn">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/flexslider/jquery.flexslider-min.js"></script>
+        <script src="assets/js/jflickrfeed.min.js"></script>
+        <script src="assets/js/masonry.pkgd.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="assets/js/jquery.ui.map.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+    </body>
+
+</html>
